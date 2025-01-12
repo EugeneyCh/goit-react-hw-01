@@ -1,3 +1,5 @@
+import css from "./Profile.module.css";
+
 const Profile = ({ name, tag, location, image, stats }) => (
   <div>
     <div>
@@ -6,7 +8,7 @@ const Profile = ({ name, tag, location, image, stats }) => (
       <p>{tag}</p>
       <p>{location}</p>
     </div>
-    <ul>
+    <ul className={css.userProfile}>
       <li>
         <span>Followers</span>
         <span>{stats.followers}</span>
