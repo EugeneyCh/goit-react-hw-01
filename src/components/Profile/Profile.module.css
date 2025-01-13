@@ -1,7 +1,53 @@
+.container {
+    border: solid rgb(4, 4, 4);
+    border-radius: 10px;
+    padding-top: 40px;
+}
+
+.userList {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgrey;
+    margin: 0;
+    border-top: solid darkgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.userList li {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.userList li:not(:last-child) {
+    border-right: solid darkgrey;
+}
+
+.label {
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+}
+
+.quantity {
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+
+
 .userName {
+    font-size: 40px;
     font-weight: 700;
 }
 
-/* .userList {
-    list-style-type: none;
-} */
+.text {
+    font-size: 36px;
+    color: grey;
+    margin: 0;
+}
